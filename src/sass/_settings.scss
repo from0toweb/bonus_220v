@@ -1,0 +1,41 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Montserrat', sans-serif;
+	color: $black;
+	margin: 0;
+	padding: 0;
+}
+
+h1,
+h2,
+h3,
+p {
+	margin: 0;
+}
+h2 {
+	font-size: 55px;
+	font-weight: 700;
+	line-height: 1.29;
+	letter-spacing: normal;
+}
+h3 {
+	font-size: 26px;
+	font-weight: 700;
+	line-height: 1.38;
+	letter-spacing: normal;
+}
+.container {
+	max-width: 1716px;
+	width: 100%;
+	padding: 0 30px;
+	margin: auto;
+}
+.description {
+	font-size: 19px;
+	font-weight: normal;
+	line-height: 1.68;
+	letter-spacing: normal;
+}
