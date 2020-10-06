@@ -155,16 +155,24 @@ h3 {
     -webkit-box-pack: justify;
     justify-content: space-between; }
   .advantages__block {
-    -webkit-box-flex: 0;
-    flex: 0 0 26%;
     display: -webkit-box;
     display: flex; }
-    .advantages__block:nth-child(1) .advantages__image {
-      background: #fcf105 url(../img/advantages/percent.svg) no-repeat center center/45%; }
-    .advantages__block:nth-child(2) .advantages__image {
-      background: #fcf105 url(../img/advantages/rouble.svg) no-repeat center center/45%; }
-    .advantages__block:nth-child(3) .advantages__image {
-      background: #fcf105 url(../img/advantages/like.svg) no-repeat center center/37%; }
+    .advantages__block:nth-child(1) {
+      -webkit-box-flex: 0;
+      flex: 0 0 382px; }
+      .advantages__block:nth-child(1) .advantages__image {
+        background: #fcf105 url(../img/advantages/percent.svg) no-repeat center center/45%; }
+    .advantages__block:nth-child(2) {
+      -webkit-box-flex: 0;
+      flex: 0 0 402px;
+      margin-left: 47px; }
+      .advantages__block:nth-child(2) .advantages__image {
+        background: #fcf105 url(../img/advantages/rouble.svg) no-repeat center center/45%; }
+    .advantages__block:nth-child(3) {
+      -webkit-box-flex: 0;
+      flex: 0 0 430px; }
+      .advantages__block:nth-child(3) .advantages__image {
+        background: #fcf105 url(../img/advantages/like.svg) no-repeat center center/37%; }
   .advantages__image {
     width: 100px;
     height: 100px;
@@ -272,7 +280,7 @@ h3 {
     margin-bottom: 45px; }
   .spending__block {
     padding-top: 43px;
-    padding-bottom: 70px;
+    padding-bottom: 0;
     margin: auto;
     margin-bottom: 67px; }
   .spending__buttons {
@@ -281,15 +289,26 @@ h3 {
   .spending__button {
     margin: 0px 8px; }
   .spending__line {
-    padding: 0; }
-  .spending__image {
-    width: 215px;
-    height: 215px;
-    border-radius: 50%;
-    overflow: hidden;
-    margin-left: 90px;
-    box-shadow: inset 0 5px 8px 0 rgba(0, 0, 0, 0.12), inset 0 -2px 6px 0 rgba(0, 0, 0, 0.04);
-    background: url(../img/spending/spending.jpg) no-repeat center center/100%; }
+    padding: 0;
+    display: none; }
+    .spending__line--visible {
+      display: -webkit-box;
+      display: flex; }
+    .spending__line:nth-child(2) {
+      padding-bottom: 70px; }
+      .spending__line:nth-child(2) .spending__image {
+        width: 215px;
+        height: 215px;
+        border-radius: 50%;
+        overflow: hidden;
+        box-shadow: inset 0 5px 8px 0 rgba(0, 0, 0, 0.12), inset 0 -2px 6px 0 rgba(0, 0, 0, 0.04);
+        background: url(../img/spending/spending.jpg) no-repeat center center/100%;
+        margin-left: 90px; }
+    .spending__line:nth-child(3) .spending__image {
+      width: 257px;
+      height: 240px;
+      background: url(../img/spending/terminal.png) no-repeat center center/100%;
+      margin-left: 70px; }
   .spending__description {
     max-width: 337px; }
 
@@ -389,15 +408,16 @@ h3 {
     text-align: center; }
 
 @media screen and (max-width: 1441px) {
-  .advantages__block {
-    -webkit-box-flex: 0;
-    flex: 0 0 31.5%; }
   .accumulation__line:nth-child(1) {
     padding-bottom: 26px; }
     .accumulation__line:nth-child(1) .accumulation__image {
       margin-top: 0; }
   .accumulation__tag {
     top: -1px; } }
+
+@media screen and (max-width: 1350px) {
+  .advantages__block:nth-child(2) {
+    margin-left: 0; } }
 
 @media screen and (max-width: 1281px) {
   .start {
@@ -413,12 +433,14 @@ h3 {
     text-align: center; }
     .advantages__block:nth-child(1) {
       -webkit-box-flex: 0;
-      flex: 0 0 20.6%; }
+      flex: 0 0 250px; }
     .advantages__block:nth-child(2) {
+      -webkit-box-flex: 0;
+      flex: 0 0 277px;
       margin-left: 58px; }
     .advantages__block:nth-child(3) {
       -webkit-box-flex: 0;
-      flex: 0 0 25.1%; }
+      flex: 0 0 305px; }
   .advantages__image {
     margin-right: 0; }
   .accumulation__tag {
@@ -432,11 +454,3 @@ h3 {
     padding-top: 50px; }
     .registration__title {
       margin-bottom: 19px; } }
-
-@media screen and (max-width: 1021px) {
-  .advantages__block:nth-child(1) {
-    -webkit-box-flex: 0;
-    flex: 0 0 26.6%; }
-  .advantages__block:nth-child(3) {
-    -webkit-box-flex: 0;
-    flex: 0 0 32.1%; } }

@@ -6,19 +6,22 @@
 		justify-content: space-between;
 	}
 	&__block {
-		flex: 0 0 26%;
 		display: flex;
 		&:nth-child(1) {
+			flex: 0 0 382px;
 			.advantages__image {
 				background: $yellow url(../img/advantages/percent.svg) no-repeat center center/45%;
 			}
 		}
 		&:nth-child(2) {
+			flex: 0 0 402px;
+			margin-left: 47px;
 			.advantages__image {
 				background: $yellow url(../img/advantages/rouble.svg) no-repeat center center/45%;
 			}
 		}
 		&:nth-child(3) {
+			flex: 0 0 430px;
 			.advantages__image {
 				background: $yellow url(../img/advantages/like.svg) no-repeat center center/37%;
 			}

@@ -18,3 +18,23 @@ const accordion = () => {
 	});
 };
 accordion();
+
+const tabs = () => {
+	const buttons = document.querySelectorAll('.spending__button');
+	const contentBlocks = document.querySelectorAll('.spending__line');
+
+	buttons.forEach((item, index) => {
+		item.addEventListener('click', () => {
+			contentBlocks.forEach((elem, i) => {
+				if (index !== i) {
+					elem.classList.remove('spending__line--visible');
+					buttons[i].classList.remove('button--active');
+				} else {
+					elem.classList.add('spending__line--visible');
+					buttons[i].classList.add('button--active');
+				}
+			});
+		});
+	});
+};
+tabs();

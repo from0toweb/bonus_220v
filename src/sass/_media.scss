@@ -1,9 +1,4 @@
 @media screen and (max-width: 1441px) {
-	.advantages {
-		&__block {
-			flex: 0 0 31.5%;
-		}
-	}
 	.accumulation {
 		&__line {
 			&:nth-child(1) {
@@ -15,6 +10,16 @@
 		}
 		&__tag {
 			top: -1px;
+		}
+	}
+}
+
+@media screen and (max-width: 1350px) {
+	.advantages {
+		&__block {
+			&:nth-child(2) {
+				margin-left: 0;
+			}
 		}
 	}
 }
@@ -32,13 +37,14 @@
 			align-items: center;
 			text-align: center;
 			&:nth-child(1) {
-				flex: 0 0 20.6%;
+				flex: 0 0 250px;
 			}
 			&:nth-child(2) {
+				flex: 0 0 277px;
 				margin-left: 58px;
 			}
 			&:nth-child(3) {
-				flex: 0 0 25.1%;
+				flex: 0 0 305px;
 			}
 		}
 		&__image {
@@ -61,20 +67,6 @@
 		padding-top: 50px;
 		&__title {
 			margin-bottom: 19px;
-		}
-	}
-}
-
-@media screen and (max-width: 1021px) {
-	.advantages {
-		&__block {
-			&:nth-child(1) {
-				flex: 0 0 26.6%;
-			}
-
-			&:nth-child(3) {
-				flex: 0 0 32.1%;
-			}
 		}
 	}
 }
