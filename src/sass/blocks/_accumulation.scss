@@ -1,0 +1,68 @@
+.accumulation {
+	padding-top: 46px;
+	padding-bottom: 45px;
+	&__title {
+		text-align: center;
+		margin-bottom: 45px;
+	}
+	&__block {
+		margin: auto;
+		padding-bottom: 28px;
+	}
+	&__line {
+		padding-top: 51px;
+		&:nth-child(1) {
+			padding-bottom: 11px;
+			.accumulation__image {
+				width: 234px;
+				height: 244px;
+				margin-top: 14px;
+				background: url(../img/accumulation/nivelir.jpg) no-repeat center center/contain;
+			}
+		}
+		&:nth-child(2) {
+			padding-bottom: 0;
+			.accumulation__image {
+				width: 238px;
+				height: 282px;
+				margin-right: 17px;
+				background: url(../img/accumulation/man.png) no-repeat center center/100%;
+			}
+		}
+	}
+	&__image {
+		position: relative;
+	}
+	&__tag {
+		position: absolute;
+		left: 4px;
+		top: -17px;
+		padding: 3px 7px;
+		border-radius: 4px;
+		border: solid 2px $yellow;
+		font-family: 'BalloonXBdTL';
+		font-size: 17px;
+		font-style: italic;
+		line-height: 1.29;
+	}
+	&__flash {
+		display: inline-block;
+		vertical-align: middle;
+		width: 17px;
+		height: 17px;
+		border-radius: 50%;
+		background: $yellow url(../img/accumulation/flash.svg)no-repeat center center/contain;
+	}
+	&__description {
+		max-width: 320px;
+	}
+	&__info {
+		display: inline-block;
+		vertical-align: middle;
+		width: 20px;
+		height: 20px;
+		margin-left: 10px;
+		border-radius: 50%;
+		background: $ice-blue url(../img/accumulation/info.svg) no-repeat center center/33%;
+	}
+}

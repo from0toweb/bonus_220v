@@ -56,7 +56,7 @@ function watcher() {
 	watch('./src/sass/**/*.sass', serveSass);
 	watch('./src/sass/**/*.scss', serveSass);
 	watch([ './src/js/**/*.js', '!./src/js/script.js' ], webPack);
-	watch('./src/*.html', browserSync.reload);
+	watch('./src/*.html').on('change', browserSync.reload);
 }
 
 // сжатие и конвертация картинок

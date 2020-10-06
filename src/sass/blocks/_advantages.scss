@@ -1,0 +1,43 @@
+.advantages {
+	padding-top: 84px;
+	padding-bottom: 50px;
+	&__wrap {
+		display: flex;
+		justify-content: space-between;
+	}
+	&__block {
+		flex: 0 0 26%;
+		display: flex;
+		&:nth-child(1) {
+			.advantages__image {
+				background: $yellow url(../img/advantages/percent.svg) no-repeat center center/45%;
+			}
+		}
+		&:nth-child(2) {
+			.advantages__image {
+				background: $yellow url(../img/advantages/rouble.svg) no-repeat center center/45%;
+			}
+		}
+		&:nth-child(3) {
+			.advantages__image {
+				background: $yellow url(../img/advantages/like.svg) no-repeat center center/37%;
+			}
+		}
+	}
+	&__image {
+		width: 100px;
+		height: 100px;
+		border-radius: 50%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		margin-right: 30px;
+	}
+	&__title {
+		margin-top: 14px;
+		margin-bottom: 15px;
+	}
+	&__description {
+		max-width: 305px;
+	}
+}
